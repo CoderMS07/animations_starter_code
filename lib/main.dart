@@ -1,4 +1,7 @@
+import 'package:animation_starter_code/explicit_examples/login_animation.dart';
 import 'package:animation_starter_code/implicit_examples/animated_color_pallete.dart';
+import 'package:animation_starter_code/implicit_examples/animated_shopping_cart_button.dart';
+import 'package:animation_starter_code/implicit_examples/animated_tween_animation_builder_example.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,11 +15,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const AnimatedColorPalette(),
+    
+      home: const LoginScreenAnimation(),
     );
   }
 }
